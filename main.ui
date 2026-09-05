@@ -19,19 +19,25 @@
      <layout class="QHBoxLayout" name="horizontalLayoutDate">
       <item>
        <widget class="QLCDNumber" name="lcdYear">
-        <property name="digitCount">
-         <number>4</number>
-        </property>
         <property name="minimumSize">
          <size>
           <width>110</width>
           <height>60</height>
          </size>
         </property>
+        <property name="digitCount">
+         <number>4</number>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QLabel" name="labelYear">
+        <property name="font">
+         <font>
+          <family>OPPO Serif SC</family>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>年</string>
         </property>
@@ -39,19 +45,25 @@
       </item>
       <item>
        <widget class="QLCDNumber" name="lcdMonth">
-        <property name="digitCount">
-         <number>2</number>
-        </property>
         <property name="minimumSize">
          <size>
           <width>70</width>
           <height>60</height>
          </size>
         </property>
+        <property name="digitCount">
+         <number>2</number>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QLabel" name="labelMonth">
+        <property name="font">
+         <font>
+          <family>OPPO Serif SC</family>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>月</string>
         </property>
@@ -59,19 +71,25 @@
       </item>
       <item>
        <widget class="QLCDNumber" name="lcdDay">
-        <property name="digitCount">
-         <number>2</number>
-        </property>
         <property name="minimumSize">
          <size>
           <width>70</width>
           <height>60</height>
          </size>
         </property>
+        <property name="digitCount">
+         <number>2</number>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QLabel" name="labelDay">
+        <property name="font">
+         <font>
+          <family>OPPO Serif SC</family>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>日</string>
         </property>
@@ -79,6 +97,12 @@
       </item>
       <item>
        <widget class="QLabel" name="labelWeekText">
+        <property name="font">
+         <font>
+          <family>OPPO Serif SC</family>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>星期</string>
         </property>
@@ -86,14 +110,14 @@
       </item>
       <item>
        <widget class="QLCDNumber" name="lcdWeek">
-        <property name="digitCount">
-         <number>1</number>
-        </property>
         <property name="minimumSize">
          <size>
           <width>50</width>
           <height>60</height>
          </size>
+        </property>
+        <property name="digitCount">
+         <number>1</number>
         </property>
        </widget>
       </item>
@@ -101,14 +125,14 @@
     </item>
     <item>
      <widget class="QLCDNumber" name="lcdHMS">
-      <property name="digitCount">
-       <number>8</number>
-      </property>
       <property name="minimumSize">
        <size>
         <width>620</width>
         <height>200</height>
        </size>
+      </property>
+      <property name="digitCount">
+       <number>8</number>
       </property>
      </widget>
     </item>
