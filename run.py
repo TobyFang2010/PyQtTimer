@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QMessageBox
 from PyQt5.QtCore import Qt, QTimer, QTime, QDate
 
 from mainwin import Ui_MainWindow
@@ -74,8 +74,10 @@ class MainWin(QMainWindow, Ui_MainWindow):
     def close_alarm_func(self):
         if self._alarm_dialog is not None:
             self._alarm_dialog.close()
-        self.alarm_is_set = False
-        print("闹钟已关闭")
+            QMessageBox.information(None,"闹钟", "闹钟已关闭")
+            self.alarm_is_set = False
+        else:
+            QMessageBox.information(None,"闹钟", "未设置闹钟")
 
 
 if __name__ == "__main__":
