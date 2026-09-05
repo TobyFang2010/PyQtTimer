@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>520</width>
-    <height>320</height>
+    <width>660</width>
+    <height>380</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,81 +16,40 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLCDNumber" name="lcdTime">
+     <widget class="QLabel" name="labelDateTime">
+      <property name="minimumSize">
+       <size>
+        <width>620</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>2026年09月05日 星期6</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdHMS">
       <property name="digitCount">
        <number>8</number>
       </property>
       <property name="minimumSize">
        <size>
-        <width>400</width>
-        <height>100</height>
+        <width>620</width>
+        <height>200</height>
        </size>
       </property>
      </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLCDNumber" name="lcdYear">
-        <property name="digitCount">
-         <number>4</number>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="labelYear">
-        <property name="text">
-         <string>年</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLCDNumber" name="lcdMonth">
-        <property name="digitCount">
-         <number>2</number>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="labelMonth">
-        <property name="text">
-         <string>月</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLCDNumber" name="lcdDay">
-        <property name="digitCount">
-         <number>2</number>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="labelDay">
-        <property name="text">
-         <string>日</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutWeek">
-      <item>
-       <widget class="QLabel" name="labelWeekText">
-        <property name="text">
-         <string>星期：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLCDNumber" name="lcdWeek">
-        <property name="digitCount">
-         <number>1</number>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </item>
    </layout>
   </widget>
@@ -99,7 +58,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>520</width>
+     <width>660</width>
      <height>22</height>
     </rect>
    </property>
